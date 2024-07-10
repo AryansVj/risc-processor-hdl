@@ -34,3 +34,16 @@ we stick to the following scheme, where a module consists of 4 parts:
 3. The assignments of (Boolean) values to signals (wires)
 4. The assignments to registers (at the positive clk edge)
 ![Module Structure](/Docs/images/module_structure.png)
+
+#### IR_decode
+`IR_decode.v` - Decoding the Instructions stored in the Instruction Register
+- inputs: 
+    1. Clock (clk) and Reset (rst)
+    2. Instruction (32 bit value)
+- outputs: 
+    1. p,q,u,v (Instruction ID/opcode)
+    2. w, cc, 
+    3. op (Opcode)
+    4. reg_d, reg_s, reg_t (Register addresses of Destination, Source, Target)
+    5. imm, off (Immediate and offset values)
+    6. MOV, LSL, ASR, ROR, AND, ANN, IOR, XOR, ADD, SUB, MUL, DIV, LDW, TW, BR (Operation keywords asserted according to decoded Instruction)
