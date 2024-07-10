@@ -21,15 +21,16 @@
 
 module reg_bank(
     input clk, rst,
-    input [0:15] registers,
     input writeEn,
     input [3:0] reg_d, reg_s, reg_t,
     input [31:0] dest_Din,
     output reg [31:0] src_Dout, tgt_Dout
     );
 
+    // Register bank of the Set of 16 registers
     reg [31:0] REGISTER_BANK [0:15];
     
+    // Reset the register bank content on rst
     integer i;
     always @(posedge clk or posedge rst) begin 
         if (rst) begin 
@@ -39,6 +40,7 @@ module reg_bank(
         end
     end
 
+    // Writing to and Reading from Registers in the bank
     always @(posedge clk) begin
         if (writeEn == 1) begin
             REGISTER_BANK[reg_d] <= dest_Din;
@@ -47,8 +49,4 @@ module reg_bank(
         tgt_Dout <= REGISTER_BANK[reg_t];
     end
     
-    initial begin
-        $display ("Module Done");
-        $finish;
-    end
 endmodule
