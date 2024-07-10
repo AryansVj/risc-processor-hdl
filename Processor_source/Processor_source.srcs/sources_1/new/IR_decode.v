@@ -24,7 +24,7 @@ module IR_decode(
     input clk, rst,
     input [31:0] IRin,
     output p,q,u,v,w,
-    output cc, ira, irb, op, irc, imm, off
+    output cc, reg_d, reg_s, op, reg_t, imm, off
     );
     
     wire p = IRin[31];
