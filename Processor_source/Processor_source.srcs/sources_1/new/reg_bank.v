@@ -19,9 +19,6 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-
-`timescale 1ns/1ps
-
 module reg_bank(
     input clk, rst,
     input [0:15] registers,
@@ -31,31 +28,27 @@ module reg_bank(
     output reg [31:0] src_Dout, tgt_Dout
     );
 
-    reg [31:0] REG_BANK [0:15];
-    integer i,j;
-
+    reg [31:0] REGISTER_BANK [0:15];
+    
+    integer i;
     always @(posedge clk or posedge rst) begin 
         if (rst) begin 
             for (i=0;i<16;i=i+1) begin
-                REG_BANK[i] <= 32'b0;
-            end
-        end
-        else begin
-            for (j=0;j<16;j=j+1) begin
-                REG_BANK[j] = registers[j];
-                $display ("Content of REGBank %d is %b", i, REG_BANK[i]);
+                REGISTER_BANK[i] <= 32'b0;
             end
         end
     end
 
     always @(posedge clk) begin
         if (writeEn == 1) begin
-            REG_BANK[reg_d] <= dest_Din;
+            REGISTER_BANK[reg_d] <= dest_Din;
         end
-        else begin
-            src_Dout <= REG_BANK[reg_s];
-            tgt_Dout <= REG_BANK[reg_t];
-        end
+        src_Dout <= REGISTER_BANK[reg_s];
+        tgt_Dout <= REGISTER_BANK[reg_t];
     end
     
+    initial begin
+        $display ("Module Done");
+        $finish;
+    end
 endmodule
