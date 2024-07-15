@@ -23,27 +23,28 @@
 module IR_decode(
     input clk, rst,
     input [31:0] IRin,
-    output p, q, u, v, w, cc, reg_d, reg_s, op, reg_t, imm, off,
-    output MOV, LSL, ASR, ROR, AND, ANN, IOR, XOR, ADD, SUB, MUL, DIV, LDW, STW, BR
+    output wire p, q, u, v, w, cc, reg_d, reg_s, op, reg_t, imm, off,
+    input wire N, Z, C, OV, S,
+    output wire MOV, LSL, ASR, ROR, AND, ANN, IOR, XOR, ADD, SUB, MUL, DIV, LDW, STW, BR,
+    output wire stall,
+    output reg stall1
     );
 
-    wire MOV, LSL, ASR, ROR, AND, ANN, IOR, XOR, ADD, SUB, MUL, DIV;
-    wire LDW, STW;
-    wire BR;
+    wire stallL;
     
-    wire p = IRin[31];
-    wire q = IRin[30];
-    wire u = IRin[29];
-    wire v = IRin[28];
-    wire w = IRin[16];
+    assign p = IRin[31];
+    assign q = IRin[30];
+    assign u = IRin[29];
+    assign v = IRin[28];
+    assign w = IRin[16];
     
-    wire cc = IRin[26:24];
-    wire reg_d = IRin[27:24];     // Destination register addr
-    wire reg_s = IRin[23:20];     // Source Register addr
-    wire op = IRin[19:16];
-    wire reg_t = IRin[3:0];       // Target register addr
-    wire imm = IRin[15:0];
-    wire off = IRin[19:0];
+    assign cc = IRin[26:24];
+    assign reg_d = IRin[27:24];     // Destination register addr
+    assign reg_s = IRin[23:20];     // Source Register addr
+    assign op = IRin[19:16];
+    assign reg_t = IRin[3:0];       // Target register addr
+    assign imm = IRin[15:0];
+    assign off = IRin[19:0];
 
     // Register Instructions
     assign MOV = ~p & (op==0);
@@ -66,4 +67,13 @@ module IR_decode(
     // Branch Instructions
     assign BR = p & q;
 
+    // Stalling signal to retain same instruction in PC for LDW
+    assign stall = stallL;
+    assign stallL = LDW & ~stall1;
+    always @(posedge clk) begin 
+        stall1 <= stallL; 
+    end
+
+    // Branch condition
+    assign cond = IRin[27] ^ ((cc==0) & N | (cc==1) & Z | (cc==2) & C | (cc==3) & OV | (cc==4) & (C|Z) | (cc==5) & S | (cc==6) & (S|Z) | (cc==7));
 endmodule
