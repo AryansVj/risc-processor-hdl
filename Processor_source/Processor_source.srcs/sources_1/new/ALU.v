@@ -23,12 +23,15 @@
 module ALU(
     input clk, rst,
     input wire [31:0] src_Data, tgt_Data,
-    input wire p, q, u, v, w,
+    input wire p, q, u, v, w, cc,
     input wire [0:15] imm,
     input wire MOV, LSL, ASR, ROR, AND, ANN, IOR, XOR, ADD, SUB, MUL, DIV, LDW, STW, BR,
     input wire nxpc, dmout, inbus, ioenb,
     input wire [0:4] reg_d,
-    output reg [31:0] ALU_res, regmux
+    input wire stall, stall1,
+    output reg [31:0] ALU_res, regmux,
+    output wire cond, regwr,
+    output reg N, Z, C, OV, S
     );
 
     wire [31:0] tgt_Data0, product, quotient;
@@ -86,5 +89,16 @@ module ALU(
             (LDW & ~ioenb) ? dmout :                    // Sending loaded content from dm to reg_bank
             (LDW & ioenb) ? inbus : 
             (BR & v) ? {18'b0, nxpc, 2'b0} : ALU_res;   // Sending next PC to link register
+        
     end
+
+    always @(*) begin
+        // Predicate conditions
+        N <= regwr ? regmux[31] : N;        // Sign flag
+        Z <= regwr ? (regmux == 0) : Z;     // Zero flag
+    end
+
+    // Register write enable
+    assign regwr = (~p & ~stall) | (LDW & ~stall & ~stall1) | (BR & cond & v);
+
 endmodule
