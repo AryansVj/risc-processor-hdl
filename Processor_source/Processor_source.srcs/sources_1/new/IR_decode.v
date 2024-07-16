@@ -23,8 +23,8 @@
 module IR_decode(
     input clk, rst,
     input [31:0] IRin,
-    output wire p, q, u, v, w, cc, reg_d, reg_s, op, reg_t, imm, off,
     input wire N, Z, C, OV, S,
+    output wire p, q, u, v, w, cc, reg_d, reg_s, op, reg_t, imm, off, dmwr,
     output wire MOV, LSL, ASR, ROR, AND, ANN, IOR, XOR, ADD, SUB, MUL, DIV, LDW, STW, BR,
     output wire stall,
     output reg stall1
@@ -63,6 +63,7 @@ module IR_decode(
     // Memory Instructions
     assign LDW = p & ~q & ~u;
     assign STW = p & ~q & u;
+    assign dmwr = (STW==1);
     
     // Branch Instructions
     assign BR = p & q;
