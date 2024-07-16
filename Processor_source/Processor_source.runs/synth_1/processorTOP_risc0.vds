@@ -1,0 +1,380 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Tue Jul 16 23:37:31 2024
+# Process ID: 14124
+# Current directory: E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.runs/synth_1
+# Command line: vivado.exe -log processorTOP_risc0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source processorTOP_risc0.tcl
+# Log file: E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.runs/synth_1/processorTOP_risc0.vds
+# Journal file: E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.runs/synth_1\vivado.jou
+# Running On: AryansExpertbook, OS: Windows, CPU Frequency: 2419 MHz, CPU Physical cores: 4, Host memory: 25444 MB
+#-----------------------------------------------------------
+source processorTOP_risc0.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 476.219 ; gain = 180.477
+Command: synth_design -top processorTOP_risc0 -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 844
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 923.867 ; gain = 444.672
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'cond', assumed default net type 'wire' [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/IR_decode.v:83]
+INFO: [Synth 8-11241] undeclared symbol 'cond', assumed default net type 'wire' [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/IR_decode.v:83]
+CRITICAL WARNING: [Synth 8-9873] overwriting previous definition of module 'IR_decode' [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/IR_decode.v:84]
+INFO: [Synth 8-9937] previous definition of design element 'IR_decode' is here [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/IR_decode.v:84]
+CRITICAL WARNING: [Synth 8-9873] overwriting previous definition of module 'data_mem' [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/data_mem.v:42]
+INFO: [Synth 8-9937] previous definition of design element 'data_mem' is here [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/data_mem.v:42]
+CRITICAL WARNING: [Synth 8-9873] overwriting previous definition of module 'prog_mem' [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/prog_mem.v:42]
+INFO: [Synth 8-9937] previous definition of design element 'prog_mem' is here [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/prog_mem.v:42]
+CRITICAL WARNING: [Synth 8-9873] overwriting previous definition of module 'pc' [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/PC.v:41]
+INFO: [Synth 8-9937] previous definition of design element 'pc' is here [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/PC.v:41]
+CRITICAL WARNING: [Synth 8-9873] overwriting previous definition of module 'reg_bank' [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/reg_bank.v:52]
+INFO: [Synth 8-9937] previous definition of design element 'reg_bank' is here [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/reg_bank.v:52]
+CRITICAL WARNING: [Synth 8-9873] overwriting previous definition of module 'ALU' [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/ALU.v:85]
+INFO: [Synth 8-9937] previous definition of design element 'ALU' is here [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/ALU.v:85]
+INFO: [Synth 8-11241] undeclared symbol 'stall', assumed default net type 'wire' [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/processor_risc0.v:62]
+INFO: [Synth 8-11241] undeclared symbol 'stall1', assumed default net type 'wire' [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/processor_risc0.v:70]
+INFO: [Synth 8-11241] undeclared symbol 'endbit', assumed default net type 'wire' [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/rs232_rx.v:40]
+INFO: [Synth 8-11241] undeclared symbol 'cond', assumed default net type 'wire' [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/IR_decode.v:83]
+CRITICAL WARNING: [Synth 8-9873] overwriting previous definition of module 'IR_decode' [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/IR_decode.v:84]
+INFO: [Synth 8-9937] previous definition of design element 'IR_decode' is here [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/IR_decode.v:84]
+CRITICAL WARNING: [Synth 8-9873] overwriting previous definition of module 'data_mem' [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/data_mem.v:42]
+INFO: [Synth 8-9937] previous definition of design element 'data_mem' is here [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/data_mem.v:42]
+CRITICAL WARNING: [Synth 8-9873] overwriting previous definition of module 'prog_mem' [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/prog_mem.v:42]
+INFO: [Synth 8-9937] previous definition of design element 'prog_mem' is here [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/prog_mem.v:42]
+CRITICAL WARNING: [Synth 8-9873] overwriting previous definition of module 'pc' [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/PC.v:41]
+INFO: [Synth 8-9937] previous definition of design element 'pc' is here [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/PC.v:41]
+CRITICAL WARNING: [Synth 8-9873] overwriting previous definition of module 'reg_bank' [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/reg_bank.v:52]
+INFO: [Synth 8-9937] previous definition of design element 'reg_bank' is here [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/reg_bank.v:52]
+CRITICAL WARNING: [Synth 8-9873] overwriting previous definition of module 'ALU' [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/ALU.v:85]
+INFO: [Synth 8-9937] previous definition of design element 'ALU' is here [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/ALU.v:85]
+INFO: [Synth 8-11241] undeclared symbol 'stall', assumed default net type 'wire' [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/processor_risc0.v:62]
+INFO: [Synth 8-11241] undeclared symbol 'stall1', assumed default net type 'wire' [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/processor_risc0.v:70]
+CRITICAL WARNING: [Synth 8-9873] overwriting previous definition of module 'processor_risc0' [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/processor_risc0.v:101]
+INFO: [Synth 8-9937] previous definition of design element 'processor_risc0' is here [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/processor_risc0.v:101]
+CRITICAL WARNING: [Synth 8-9873] overwriting previous definition of module 'rs232_tx' [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/rs232_tx.v:47]
+INFO: [Synth 8-9937] previous definition of design element 'rs232_tx' is here [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/rs232_tx.v:47]
+INFO: [Synth 8-11241] undeclared symbol 'endbit', assumed default net type 'wire' [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/rs232_rx.v:40]
+CRITICAL WARNING: [Synth 8-9873] overwriting previous definition of module 'rs232_rx' [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/rs232_rx.v:53]
+INFO: [Synth 8-9937] previous definition of design element 'rs232_rx' is here [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/rs232_rx.v:53]
+INFO: [Synth 8-6157] synthesizing module 'processorTOP_risc0' [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/processorTOP_risc0.v:26]
+INFO: [Synth 8-6157] synthesizing module 'processor_risc0' [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/processor_risc0.v:29]
+INFO: [Synth 8-6157] synthesizing module 'data_mem' [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/data_mem.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'data_mem' (0#1) [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/data_mem.v:23]
+INFO: [Synth 8-6157] synthesizing module 'prog_mem' [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/prog_mem.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'prog_mem' (0#1) [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/prog_mem.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pc' [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/PC.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'pc' (0#1) [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/PC.v:23]
+INFO: [Synth 8-6157] synthesizing module 'IR_decode' [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/IR_decode.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'IR_decode' (0#1) [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/IR_decode.v:23]
+INFO: [Synth 8-6157] synthesizing module 'reg_bank' [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/reg_bank.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'reg_bank' (0#1) [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/reg_bank.v:22]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (0#1) [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'processor_risc0' (0#1) [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/processor_risc0.v:29]
+INFO: [Synth 8-6157] synthesizing module 'rs232_rx' [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/rs232_rx.v:23]
+WARNING: [Synth 8-6104] Input port 'data' has an internal driver [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/rs232_rx.v:41]
+INFO: [Synth 8-6155] done synthesizing module 'rs232_rx' (0#1) [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/rs232_rx.v:23]
+WARNING: [Synth 8-6104] Input port 'RxD' has an internal driver [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/processorTOP_risc0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'rs232_tx' [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/rs232_tx.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'rs232_tx' (0#1) [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/rs232_tx.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'processorTOP_risc0' (0#1) [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/processorTOP_risc0.v:26]
+WARNING: [Synth 8-6014] Unused sequential element nxpc_reg was removed.  [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/PC.v:34]
+WARNING: [Synth 8-3848] Net product in module/entity ALU does not have driver. [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/ALU.v:34]
+WARNING: [Synth 8-3848] Net quotient in module/entity ALU does not have driver. [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/ALU.v:34]
+WARNING: [Synth 8-3848] Net IOaddr in module/entity processor_risc0 does not have driver. [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/processor_risc0.v:32]
+WARNING: [Synth 8-3848] Net rd in module/entity processor_risc0 does not have driver. [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/processor_risc0.v:33]
+WARNING: [Synth 8-3848] Net wr in module/entity processor_risc0 does not have driver. [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/processor_risc0.v:33]
+WARNING: [Synth 8-3848] Net outbus in module/entity processor_risc0 does not have driver. [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/processor_risc0.v:34]
+WARNING: [Synth 8-3848] Net ADDR_dm in module/entity processor_risc0 does not have driver. [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/processor_risc0.v:37]
+WARNING: [Synth 8-3848] Net dest_Data in module/entity processor_risc0 does not have driver. [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/processor_risc0.v:40]
+WARNING: [Synth 8-3848] Net pcmux in module/entity processor_risc0 does not have driver. [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/processor_risc0.v:42]
+WARNING: [Synth 8-3848] Net nxpc in module/entity processor_risc0 does not have driver. [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/processor_risc0.v:42]
+WARNING: [Synth 8-3848] Net cond in module/entity processor_risc0 does not have driver. [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/processor_risc0.v:50]
+WARNING: [Synth 8-3848] Net IOenb in module/entity processor_risc0 does not have driver. [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/processor_risc0.v:51]
+WARNING: [Synth 8-3848] Net C in module/entity processor_risc0 does not have driver. [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/processor_risc0.v:53]
+WARNING: [Synth 8-3848] Net V in module/entity processor_risc0 does not have driver. [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/processor_risc0.v:53]
+WARNING: [Synth 8-3848] Net S in module/entity processor_risc0 does not have driver. [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/processor_risc0.v:53]
+WARNING: [Synth 8-3848] Net RxD in module/entity rs232_rx does not have driver. [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/rs232_rx.v:28]
+WARNING: [Synth 8-3848] Net bitCount in module/entity rs232_tx does not have driver. [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/rs232_tx.v:34]
+WARNING: [Synth 8-3848] Net clk in module/entity processorTOP_risc0 does not have driver. [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/processorTOP_risc0.v:35]
+WARNING: [Synth 8-3848] Net clkLocked in module/entity processorTOP_risc0 does not have driver. [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/processorTOP_risc0.v:35]
+WARNING: [Synth 8-3848] Net clk in module/entity processorTOP_risc0 does not have driver. [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/processorTOP_risc0.v:35]
+WARNING: [Synth 8-3848] Net dataRx in module/entity processorTOP_risc0 does not have driver. [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/processorTOP_risc0.v:43]
+WARNING: [Synth 8-7129] Port clk in module ALU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst in module ALU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p in module ALU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LDW in module ALU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port STW in module ALU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BR in module ALU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_d[0] in module ALU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_d[1] in module ALU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_d[2] in module ALU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_d[3] in module ALU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stall in module ALU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stall1 in module ALU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst in module IR_decode is either unconnected or has no load
+WARNING: [Synth 8-7129] Port N in module IR_decode is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Z in module IR_decode is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C in module IR_decode is either unconnected or has no load
+WARNING: [Synth 8-7129] Port V in module IR_decode is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S in module IR_decode is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tgt_Data[31] in module pc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tgt_Data[30] in module pc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tgt_Data[29] in module pc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tgt_Data[28] in module pc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tgt_Data[27] in module pc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tgt_Data[26] in module pc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tgt_Data[25] in module pc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tgt_Data[24] in module pc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tgt_Data[23] in module pc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tgt_Data[22] in module pc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tgt_Data[21] in module pc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tgt_Data[20] in module pc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tgt_Data[19] in module pc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tgt_Data[18] in module pc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tgt_Data[17] in module pc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tgt_Data[16] in module pc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tgt_Data[15] in module pc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tgt_Data[14] in module pc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tgt_Data[1] in module pc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tgt_Data[0] in module pc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port off[19] in module pc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port off[18] in module pc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port off[17] in module pc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port off[16] in module pc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port off[15] in module pc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port off[14] in module pc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port off[13] in module pc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port off[12] in module pc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcmux[11] in module prog_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[11] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IOaddr[5] in module processor_risc0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IOaddr[4] in module processor_risc0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IOaddr[3] in module processor_risc0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IOaddr[2] in module processor_risc0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IOaddr[1] in module processor_risc0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IOaddr[0] in module processor_risc0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd in module processor_risc0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wr in module processor_risc0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbus[31] in module processor_risc0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbus[30] in module processor_risc0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbus[29] in module processor_risc0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbus[28] in module processor_risc0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbus[27] in module processor_risc0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbus[26] in module processor_risc0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbus[25] in module processor_risc0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbus[24] in module processor_risc0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbus[23] in module processor_risc0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbus[22] in module processor_risc0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbus[21] in module processor_risc0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbus[20] in module processor_risc0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbus[19] in module processor_risc0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbus[18] in module processor_risc0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbus[17] in module processor_risc0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbus[16] in module processor_risc0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbus[15] in module processor_risc0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbus[14] in module processor_risc0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbus[13] in module processor_risc0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbus[12] in module processor_risc0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbus[11] in module processor_risc0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbus[10] in module processor_risc0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbus[9] in module processor_risc0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbus[8] in module processor_risc0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbus[7] in module processor_risc0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbus[6] in module processor_risc0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbus[5] in module processor_risc0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbus[4] in module processor_risc0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbus[3] in module processor_risc0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbus[2] in module processor_risc0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbus[1] in module processor_risc0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbus[0] in module processor_risc0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK50M in module processorTOP_risc0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 1118.156 ; gain = 638.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 1118.156 ; gain = 638.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 1118.156 ; gain = 638.961
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'N_reg' [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/processor_risc0.v:67]
+WARNING: [Synth 8-327] inferring latch for variable 'Z_reg' [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/processor_risc0.v:67]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:21 . Memory (MB): peak = 1118.156 ; gain = 638.961
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   32 Bit       Adders := 1     
+	   4 Input   32 Bit       Adders := 1     
+	   2 Input   12 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 2051  
+	               12 Bit    Registers := 2     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---RAMs : 
+	              64K Bit	(2048 X 32 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 7     
+	   4 Input   32 Bit        Muxes := 5     
+	   2 Input   16 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 3     
+	   2 Input    9 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 19    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port CLK50M in module processorTOP_risc0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:43 . Memory (MB): peak = 1338.090 ; gain = 858.895
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:43 . Memory (MB): peak = 1338.090 ; gain = 858.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:43 . Memory (MB): peak = 1338.090 ; gain = 858.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:50 . Memory (MB): peak = 1338.090 ; gain = 858.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:50 . Memory (MB): peak = 1338.090 ; gain = 858.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:50 . Memory (MB): peak = 1338.090 ; gain = 858.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:50 . Memory (MB): peak = 1338.090 ; gain = 858.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:50 . Memory (MB): peak = 1338.090 ; gain = 858.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:50 . Memory (MB): peak = 1338.090 ; gain = 858.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |OBUF |     9|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     9|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:50 . Memory (MB): peak = 1338.090 ; gain = 858.895
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 15 critical warnings and 118 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:50 . Memory (MB): peak = 1338.090 ; gain = 858.895
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:50 . Memory (MB): peak = 1338.090 ; gain = 858.895
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1340.309 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1347.930 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: fcdb11a
+INFO: [Common 17-83] Releasing license: Synthesis
+54 Infos, 118 Warnings, 15 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:52 . Memory (MB): peak = 1347.930 ; gain = 871.711
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1347.930 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.runs/synth_1/processorTOP_risc0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file processorTOP_risc0_utilization_synth.rpt -pb processorTOP_risc0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Jul 16 23:38:34 2024...

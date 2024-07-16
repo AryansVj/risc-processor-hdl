@@ -1,0 +1,46 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/IR_decode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IR_decode
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/data_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/processor_risc0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IR_decode
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'IR_decode' [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/IR_decode.v:23]
+INFO: [VRFC 10-311] analyzing module data_mem
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'data_mem' [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/data_mem.v:23]
+INFO: [VRFC 10-311] analyzing module prog_mem
+INFO: [VRFC 10-311] analyzing module pc
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'pc' [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/PC.v:23]
+INFO: [VRFC 10-311] analyzing module reg_bank
+INFO: [VRFC 10-311] analyzing module ALU
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'ALU' [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/ALU.v:23]
+INFO: [VRFC 10-311] analyzing module processor_risc0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/prog_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module prog_mem
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'prog_mem' [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/prog_mem.v:23]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/reg_bank.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_bank
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'reg_bank' [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/reg_bank.v:22]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/rs232_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rs232_rx
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/rs232_tx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rs232_tx
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/processorTOP_risc0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IR_decode
+INFO: [VRFC 10-311] analyzing module data_mem
+INFO: [VRFC 10-311] analyzing module prog_mem
+INFO: [VRFC 10-311] analyzing module pc
+INFO: [VRFC 10-311] analyzing module reg_bank
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module processor_risc0
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'processor_risc0' [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/processor_risc0.v:29]
+INFO: [VRFC 10-311] analyzing module rs232_tx
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'rs232_tx' [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/rs232_tx.v:23]
+INFO: [VRFC 10-311] analyzing module rs232_rx
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'rs232_rx' [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/rs232_rx.v:23]
+INFO: [VRFC 10-311] analyzing module processorTOP_risc0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
