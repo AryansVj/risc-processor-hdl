@@ -23,7 +23,7 @@
 module IR_decode(
     input clk, rst,
     input [31:0] IRin,
-    input wire N, Z, C, OV, S,
+    input wire N, Z, C, V, S,
     output wire p, q, u, v, w, cc, reg_d, reg_s, op, reg_t, imm, off, dmwr,
     output wire MOV, LSL, ASR, ROR, AND, ANN, IOR, XOR, ADD, SUB, MUL, DIV, LDW, STW, BR,
     output wire stall,
@@ -76,5 +76,5 @@ module IR_decode(
     end
 
     // Branch condition
-    assign cond = IRin[27] ^ ((cc==0) & N | (cc==1) & Z | (cc==2) & C | (cc==3) & OV | (cc==4) & (C|Z) | (cc==5) & S | (cc==6) & (S|Z) | (cc==7));
+    assign cond = IRin[27] ^ ((cc==0) & N | (cc==1) & Z | (cc==2) & C | (cc==3) & V | (cc==4) & (C|Z) | (cc==5) & S | (cc==6) & (S|Z) | (cc==7));
 endmodule
