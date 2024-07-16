@@ -23,10 +23,10 @@
 module ALU(
     input clk, rst,
     input wire [31:0] src_Data, tgt_Data,
-    input wire p, q, u, v, w, cc,
+    input wire p, q, u, v, w,
     input wire [0:15] imm,
     input wire MOV, LSL, ASR, ROR, AND, ANN, IOR, XOR, ADD, SUB, MUL, DIV, LDW, STW, BR,
-    input wire [0:4] reg_d,
+    input wire [0:3] reg_d,
     input wire stall, stall1,
     output reg [31:0] ALU_res
     );
