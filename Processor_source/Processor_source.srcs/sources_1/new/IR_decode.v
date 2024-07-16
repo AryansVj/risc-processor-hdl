@@ -24,9 +24,13 @@ module IR_decode(
     input clk, rst,
     input [31:0] IRin,
     input wire N, Z, C, V, S,
-    output wire p, q, u, v, w, cc, reg_d, reg_s, op, reg_t, imm, off, dmwr,
+    output wire p, q, u, v, w, 
+    output wire [2:0] cc, 
+    output wire [3:0] reg_d, reg_s, reg_t, op, 
+    output wire [15:0] imm, 
+    output wire [19:0] off,
     output wire MOV, LSL, ASR, ROR, AND, ANN, IOR, XOR, ADD, SUB, MUL, DIV, LDW, STW, BR,
-    output wire stall,
+    output wire stall, dmwr,
     output reg stall1
     );
 
