@@ -23,7 +23,7 @@
 module data_mem(
     input clk, rst,
     input wire [31:0] dm_in,
-    input wire [13:0] addr,
+    input wire [11:0] addr,
     input wire writeEn,
     output reg [31:0] dm_out
     );
