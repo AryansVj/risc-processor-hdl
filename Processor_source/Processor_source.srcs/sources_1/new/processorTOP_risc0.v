@@ -24,12 +24,12 @@
 `include "rs232_rx.v"
 
 module processorTOP_risc0(
-    input CLK50M,
+    input clk,
     input rstln,
-    input RxD,
-    input [7:0] switches,
-    output TxD,
-    output [7:0] leds
+    input RsRx,
+    input [7:0] sw,
+    output RsTx,
+    output [7:0] led
     );
 
     wire clk, clkLocked;
@@ -50,13 +50,13 @@ module processorTOP_risc0(
 
     processor_risc0 riscx (.clk(clk), .rst(rst), .rd(IO_rd), .wr(IO_wr), .IOaddr(IO_addr), .inbus(inbus), .outbus(outbus));
 
-    rs232_rx serial_rx (.clk(clk), .rst(rst), .done(doneRx), .data(dataRx), .rdy(rdyRx), .RxD(RxD));
-    rs232_tx serial_tx (.clk(clk), .rst(rst), .start(startTx), .data(dataTx), .rdy(rdyTx), .TxD(TxD));
+    rs232_rx serial_rx (.clk(clk), .rst(rst), .done(doneRx), .data(dataRx), .rdy(rdyRx), .RxD(RsRx));
+    rs232_tx serial_tx (.clk(clk), .rst(rst), .start(startTx), .data(dataTx), .rdy(rdyTx), .TxD(RsTx));
 
     assign IO_waddr = IO_addr[5:2];
     assign inbus = 
         (IO_waddr==0) ? count1: 
-        (IO_waddr==1) ? switches :
+        (IO_waddr==1) ? sw:
         (IO_waddr==2) ? {24'b0, dataRx} :
         (IO_waddr==3) ? {30'b0, rdyTx, rdyRx} : 0;
 

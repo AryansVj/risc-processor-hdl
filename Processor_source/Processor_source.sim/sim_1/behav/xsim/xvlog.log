@@ -42,5 +42,4 @@ WARNING: [VRFC 10-3609] overwriting previous definition of module 'rs232_tx' [E:
 INFO: [VRFC 10-311] analyzing module rs232_rx
 WARNING: [VRFC 10-3609] overwriting previous definition of module 'rs232_rx' [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/rs232_rx.v:23]
 INFO: [VRFC 10-311] analyzing module processorTOP_risc0
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl
+WARNING: [VRFC 10-9336] redeclaration of ANSI port 'clk' is not allowed [E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/sources_1/new/processorTOP_risc0.v:35]

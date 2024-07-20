@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date         : Tue Jul 16 23:38:34 2024
+| Date         : Sat Jul 20 12:33:04 2024
 | Host         : AryansExpertbook running 64-bit major release  (build 9200)
 | Command      : report_utilization -file processorTOP_risc0_utilization_synth.rpt -pb processorTOP_risc0_utilization_synth.pb
 | Design       : processorTOP_risc0
@@ -151,7 +151,8 @@ Warning! LUT value is adjusted to account for LUT combining.
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| OBUF     |    9 |                  IO |
+| OBUFT    |    8 |                  IO |
+| OBUF     |    1 |                  IO |
 +----------+------+---------------------+
 
 

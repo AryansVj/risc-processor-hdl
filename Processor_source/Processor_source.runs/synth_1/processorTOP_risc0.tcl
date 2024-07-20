@@ -70,6 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 2
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tcpg236-1
 
@@ -106,7 +107,12 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
+read_xdc E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/constrs_1/imports/Constraint_files/Basys-3-Master.xdc
+set_property used_in_implementation false [get_files E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/constrs_1/imports/Constraint_files/Basys-3-Master.xdc]
+
 set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental E:/Projects/Risc_v_processor_buildup/risc-processor-hdl/Processor_source/Processor_source.srcs/utils_1/imports/synth_1/processorTOP_risc0.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
